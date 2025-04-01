@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punt Lila | TLP</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo TLP" />
+      </a>
+    </div>
+    <nav class="nav-wrapper">
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#">Qui som?</a>
+          <ul class="dropdown-menu">
+            <li><a href="historia.html">La nostra història</a></li>
+            <li><a href="equip.html">Equip</a></li>
+            <li><a href="transparencia.html">Transparència</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Programa</a>
+          <ul class="dropdown-menu">
+            <li><a href="activitats.html">Activitats</a></li>
+            <li><a href="horari.html">Horari + Ubicació</a></li>
+            <li><a href="puntlila.html">Punt Lila</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Col·labora</a>
+          <ul class="dropdown-menu">
+            <li><a href="agraiments.html">Agraïments</a></li>
+            <li><a href="soci.html">Fes-te soci</a></li>
+            <li><a href="#" onclick="thankAndRedirect()">Fes un donatiu</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Punt Lila</h1>
+    <p>El Punt Lila és una iniciativa destinada a prevenir i actuar davant qualsevol tipus de violència masclista als nostres esdeveniments. Es tracta d'un espai segur on qualsevol persona que es senti amenaçada o molestada pot rebre suport i assistència.</p>
+    <section>
+      <h2>Objectius del Punt Lila</h2>
+      <p>Els objectius d'aquesta iniciativa inclouen proporcionar un espai segur, sensibilitzar sobre la violència de gènere, i oferir suport immediat a les víctimes d'agressions o assetjament.</p>
+    </section>
+    <section>
+      <h2>Serveis Oferts</h2>
+      <p>Al Punt Lila, oferim els següents serveis durant els esdeveniments:</p>
+      <ul>
+        <li>Assessorament legal i suport psicològic.</li>
+        <li>Informació sobre recursos i drets de les víctimes.</li>
+        <li>Acompanyament a les persones afectades per garantir la seva seguretat.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://twitter.com/tlp" aria-label="Twitter">🐦</a>
+      <a href="https://instagram.com/tlp" aria-label="Instagram">📷</a>
+    </div>
+    <div class="footer-links">
+      <a href="politica.html">Política i Privacitat</a>
+      <a href="cookies.html">Cookies</a>
+    </div>
+    <p>&copy; 2023 Esdeveniment TLP. Tots els drets reservats.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function thankAndRedirect() {
+      alert("Gràcies per voler donar suport a la recerca sobre el TLP ❤️");
+      window.open("https://www.gofundme.com/f/recerca-sobre-el-tlp", "_blank");
+    }
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    document.querySelectorAll('.fade-in-section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
