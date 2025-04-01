@@ -1,1 +1,0 @@
-/* arxiu de prova */
