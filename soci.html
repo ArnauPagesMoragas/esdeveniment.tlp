@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fes-te Soci | TLP</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    main.fullscreen-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    .fullscreen-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: 100%;
+      max-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/images/logo.png" alt="Logo TLP" />
+      </a>
+    </div>
+    <nav class="nav-wrapper">
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#">Qui som?</a>
+          <ul class="dropdown-menu">
+            <li><a href="/historia.html">La nostra història</a></li>
+            <li><a href="/equip.html">Equip</a></li>
+            <li><a href="/transparencia.html">Transparència</a></li>
+            <li><a href="/faqs.html">FAQs</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Programa</a>
+          <ul class="dropdown-menu">
+            <li><a href="/activitats.html">Activitats</a></li>
+            <li><a href="/horari.html">Horari + Ubicació</a></li>
+            <li><a href="/puntlila.html">Punt Lila</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Col·labora</a>
+          <ul class="dropdown-menu">
+            <li><a href="/agraiments.html">Agraïments</a></li>
+            <li><a href="/soci.html">Fes-te soci</a></li>
+            <li><a href="#" onclick="thankAndRedirect()">Fes un donatiu</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="fullscreen-img">
+    <img src="/images/fes-te-soci.png" alt="Fes-te Soci">
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://twitter.com/tlp" aria-label="Twitter">🐦</a>
+      <a href="https://instagram.com/tlp" aria-label="Instagram">📷</a>
+    </div>
+    <div class="footer-links">
+      <a href="/politica.html">Política i Privacitat</a>
+      <a href="/cookies.html">Cookies</a>
+    </div>
+    <p>&copy; 2023 Esdeveniment TLP. Tots els drets reservats.</p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
